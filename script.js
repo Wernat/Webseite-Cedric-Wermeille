@@ -56,3 +56,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+// changeing home Background 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const backgrounds = [
+        'url(assets/pictures/background_1.jpeg)',
+        'url(assets/pictures/background_2.jpeg)',
+        'url(assets/pictures/background_3.jpeg)'
+    ];
+
+    let currentBackground = 0;
+
+    setInterval(function() {
+        currentBackground = (currentBackground + 1) % backgrounds.length;
+        document.getElementById('home').style.backgroundImage = backgrounds[currentBackground];
+    }, 5000);
+});

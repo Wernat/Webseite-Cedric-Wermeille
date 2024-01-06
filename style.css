@@ -19,7 +19,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: antiquewhite;
 }
 
 /* TRANSITION */
@@ -116,15 +116,15 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
+  background-color: antiquewhite;
+  transition: all 0.5 ease-in-out;
 }
 
 .menu-links {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: black;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -187,20 +187,11 @@ section {
   display: flex;
 }
 
-/* PROFILE SECTION */
-
-#profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
-}
-
-.section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+.section_sub_title {
+  color: antiquewhite;
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-align: center;
 }
 
 .section__text {
@@ -212,21 +203,50 @@ section {
   font-weight: 600;
 }
 
+.section__text__p {
+  text-align: center;
+}
+
 .section__text__p1 {
   text-align: center;
-  color: antiquewhite;
 }
 
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  color: antiquewhite;
+}
+
+.section__text__p3 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-align: center;
 }
 
 .title {
   font-size: 3rem;
   color: antiquewhite;
   text-align: center;
+}
+
+/* HOME SECTION */
+
+#home {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: auto;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  transition: background-image 1s ease-in-out;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
 
 #socials-container {
@@ -296,6 +316,7 @@ section {
 
 #about {
   position: relative;
+  height: auto;
 }
 
 .about-containers {
@@ -318,14 +339,8 @@ section {
   border-radius: 2rem;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
 .details-container {
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
   background: black;
   border-radius: 2rem;
@@ -339,12 +354,6 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
 /* MOTIVATION SECTION */
 
 #motivation {
@@ -354,19 +363,6 @@ section {
 
 #motivation p {
   color: antiquewhite;
-}
-
-#profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-}
-
-.motivation-sub-title {
-  color: antiquewhite;
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
 }
 
 .motivation-details-container {
@@ -387,10 +383,71 @@ section {
 
 
 /* PROJECTS SECTION */
-
 #projects {
   position: relative;
   height: auto;
+}
+
+.projects-drawings-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.projects-animations-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.projects-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+
+
+.projects-drawing-container {
+  flex: 1;
+  background: black;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.projects-video-container {
+  flex: 1;
+  background: black;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.projects-img {
+  width: 100%;
+  height: auto; /* Adjust the height automatically */
+  position: relative;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  top: 0;
+  left: 0;
+}
+
+
+.projects-video {
+  width: 100%;  /* Stretch the video to cover the entire width of the container */
+  height: auto; /* Adjust the height automatically */
+  position: relative;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  top: 0;
+  left: 0;
 }
 
 .color-container {
@@ -398,11 +455,6 @@ section {
   background: rgb(0, 0, 0);
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
 
 .project-title {
   margin: 1rem;

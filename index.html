@@ -14,7 +14,8 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">Über mich</a></li>
-          <li><a href="#motivation">Erfahrungen</a></li>
+          <li><a href="#motivation">Motivation</a></li>
+          <li><a href="#experience">Erfahrungen</a></li>
           <li><a href="#projects">Kreationen</a></li>
           <li><a href="#contact">Kontakt</a></li>
         </ul>
@@ -30,47 +31,44 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">Über mich</a></li>
+          <li><a href="#motivation" onclick="toggleMenu()">Motivation</a></li>
           <li><a href="#motivation" onclick="toggleMenu()">Erfahrungen</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Kreationen</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/Portraetbild_CW_Quadrat.jpg" alt="Cédric Wermeille profile picture" />
-      </div>
+      <section id="home">
       <div class="section__text">
-        <p class="section__text__p1">Grüezi, Ich bin</p>
+        <p class="section__text__p1">Grüezi, ich bin</p>
         <h1 class="title">Cédric Wermeille</h1>
-        <p class="section__text__p2">und suche IT-Lehrstelle</p>
+        <p class="section__text__p2">und suche eine IT-Lehrstelle</p>
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Lebenslauf_CW.pdf')"
+            class="btn btn-color-1"
+            onclick="window.open('./assets/documents/Lebenslauf_CW.pdf')"
           >
-            Download CV
+            Mein Lebenslauf
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Schreib mir
+          <button 
+            class="btn btn-color-1"
+            onclick="location.href='./#contact'">
+            Schreiben Sie mir
           </button>
         </div>
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
+            alt="Wermeille LinkedIn Profil"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/c%C3%A9dric-wermeille-628086244/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
           />
         </div>
       </div>
     </section>
+
+
+    
     <section id="about">
       <h1 class="title">Über Cédric</h1>
       <div class="section-container">
@@ -109,27 +107,30 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#motivation'"
-      />
-    </section>
 
-    <!-- SECTION - Meine Motivation  - SECTION -->
-    <section id="motivation">
-      <h1 class="title">Meine Motivation</h1>
       <div class="motivation-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="motivation-sub-title">Wieso IT?</h2>
+            <h2 class="section_sub_title">Mein Umfeld</h2>
+            <div class="article-container">
+              <p>
+                Da ich in einem mehrsprachigen mit Haushalt mit verschiedenen Kulturen aufgewachsen bin, schätze ich Diversität sehr. In unserer Familie sind die schweizerischen sowie kubanischen Werte von unseren Eltern vermittelt worden, damit wir wissen, wo unsere Wurzeln liegen. Somit werden unter anderem traditionelle Gerichte gekocht, in den Muttersprachen der Eltern, nämlich Französisch und Spanisch, geredet, Verwandte in der Westschweiz und Kuba gelegentlich besucht und der Kontakt aufrechtehrhalten. Als viertes von fünf Geschwistern ist das Familienleben nie langweilig; Oft spielen wir zusammen Video- oder Brettspiele, besuchen diverse Events, schicken uns gegenseitig Memes oder reden gemeinsam über vielfältige Themen. Während meine zwei älteren Brüder schon ausgezogen sind, wohne ich noch mit meinen zwei Schwestern im Elternhaus. Am Sonntag und an Feiertagen versammelt sich die Familie oft und verbringt den Tag gemeinsam mit sehr viel Essen und Lachen.
+Auch mit Freunden verbringe ich eine wertvolle Zeit, die ich unter anderem aus der Schule oder Cevi Schüür kennengelernt habe. So gehen wir unter anderem im Sommer zelten, besuchen im Winter Weihnachtsmärkte, gehen gemeinsam essen, treten gegeneinander in diversen Spielen an und vieles mehr.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="motivation-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="section_sub_title">Wieso IT?</h2>
             <div class="article-container">
               <p>Die Welt der Informationstechnologie fasziniert mich, weil mich nicht nur interessiert, wie das Endprodukt aussieht, sondern wie es aufgebaut wird. Aus dem Grund möchte ich beruflich mit der Funktionalität von Systemen oder Anwendungen zu tun haben und Menschen die einwandfreie Nutzung ermöglichen.</p>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="motivation-sub-title">Was ist mein Ziel?</h2>
+            <h2 class="section_sub_title">Was ist mein Ziel?</h2>
             <div class="article-container">
               <p>Durch eine IT-Lehrstelle möchte ich die Technik hinter diversen Systemen bzw. Programmen verstehen. In Zukunft möchte ich selbst eigene Anwendungen entwickeln.</p>
             </div>
@@ -143,22 +144,13 @@
       <div class="motivation-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="motivation-sub-title">Schnupperlehren</h2>
-            <div class="article-container">
-              <p>Informatiker EFZ (3 Tage)</p>
-            </div>
+            <p class="section__text__p3">Technisch begeistert</p>
           </div>
           <div class="details-container">
-            <h2 class="motivation-sub-title">Ausbildungen</h2>
-            <div class="article-container">
-              <p>WISS Informatikschule zwei Semester.</p>
-            </div>
+            <p class="section__text__p3">Lösungsorientiert</p>
           </div>
           <div class="details-container">
-            <h2 class="motivation-sub-title">Ausbildungen</h2>
-            <div class="article-container">
-              <p>logisch-abstraktes Denkvermögen</p>
-            </div>
+            <p class="section__text__p3">Kreativ</p>
           </div>
         </div>
       </div>
@@ -166,22 +158,13 @@
       <div class="motivation-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="motivation-sub-title">Ausbildungen</h2>
-            <div class="article-container">
-              <p>Geduld und Ausdauer</p>
-            </div>
+            <p class="section__text__p3">Logisch denkend</p>
           </div>
           <div class="details-container">
-            <h2 class="motivation-sub-title">Ausbildungen</h2>
-            <div class="article-container">
-              <p>Mein Beruf, mein Hobby</p>
-            </div>
+            <p class="section__text__p3">Durchhaltefähig</p>
           </div>
           <div class="details-container">
-            <h2 class="motivation-sub-title">Ausbildungen</h2>
-            <div class="article-container">
-              <p>Mein Beruf, mein Hobby</p>
-            </div>
+            <p class="section__text__p3">Flexibel</p>
           </div>
         </div>
       </div>
@@ -193,21 +176,21 @@
       <div class="timeline">
         <div class="container left">
           <div class="content">
-            <h2 class="motivation-sub-title">2023-2024 Jakobs School</h2>
+            <h2 class="section_sub_title">2023-2024 Jakobs School</h2>
             <p>Derzeit besuche ich bis zum Juli 2024 die Klasse Level 2 bei der Jakobs-School in Zürich. Es werden die allgemeinen Schulfächer, die bereits während der Sekundarschule 
               thematisiert worden sind, vertiefter behandelt und auf eine anspruchsvolle Lehre oder weiterführende Schule vorbereitet.</p>
           </div>
         </div>
         <div class="container right">
           <div class="content">
-            <h2 class="motivation-sub-title">2022-2023 Persönliche Auszeit</h2>
+            <h2 class="section_sub_title">2022-2023 Persönliche Auszeit</h2>
             <p>Die einjährige Auszeit habe ich genutzt, um eine erneute Standortbestimmung durchzuführen und an meine persönlichen Fähigkeiten zu arbeiten. Gleichzeitig habe ich mich 
               als Cevi-Leiter in Wetzikon stärker eingesetzt.</p>
           </div>
         </div>
         <div class="container left">
           <div class="content">
-            <h2 class="motivation-sub-title">2021-2022 WISS Schule für Informatik</h2>
+            <h2 class="section_sub_title">2021-2022 WISS Schule für Informatik</h2>
             <p>Da ich vom IT-Bereich fasziniert bin, habe ich mich für eine weiterführende Schule mit Fokus zur Informatik entschieden. Das erste Schuljahr empfand ich von der 
               Thematik und den diversen Projekten als sehr spannend. Leider musste ich mich vor dem Start des zweiten Ausbildungsjahres von der Schule abmelden, da ich keine 
               erforderliche Praktikumsstelle erhalten konnte.</p>
@@ -215,246 +198,142 @@
         </div>
         <div class="container right">
           <div class="content">
-            <h2 class="motivation-sub-title">2020-2021 10. Schuljahr</h2>
+            <h2 class="section_sub_title">2020-2021 10. Schuljahr</h2>
             <p>Während einem Jahr sind die Schulfächer aus der Sekundarschule vertiefter behandelt worden. Das zusätzliche Schuljahr war mir eine grosse Hilfe, um meine berufliche 
               Orientierung klarer zu definieren.</p>
           </div>
         </div>
         <div class="container left">
           <div class="content">
-            <h2 class="motivation-sub-title">2009-2020 Obligatorische Schule</h2>
+            <h2 class="section_sub_title">2009-2020 Obligatorische Schule</h2>
             <p>Während meiner Schulzeit gefielen mir diese Fächer besonders, weil…</p>
           </div>
         </div>         
       </div>
     </section>
-    
+
+    <!-- START - SECTION --- PROJECTS --- SECTION - START -->
     <section id="projects">
       <h1 class="title">Kreationen</h1>
-      <p>
+      <p class="section__text__p">
 
         Animes, Videospiele und Comics schaue ich nicht nur gerne, sondern ich möchte auch Eigene erstellen und es einer breiten Masse präsentieren. Mithilfe von Beobachtungen, Tutorials und vereinfachten Erstellungsprogrammen habe ich den Schritt gewagt, in dieser Materie einzusteigen und Verschiedenes auszuprobieren. Noch besitze ich nicht die nötigen Skills, um diese diversen Kreationen auf einer professionellen Basis umzusetzen. Dieses Hobby habe ich aus reinem Interesse und Leidenschaft gestartet, bei dem ich meine Fähigkeiten stetig verbessern möchte.
         
         Grosse Inspirationsquellen meiner Zeichnungen und Ideen sind vor allem Animes und Videospiele, die ich selbst bewundere. Aus dem Grund übernehme ich oft bereits existierende Charaktere oder Elemente aus verschiedenen Quellen, integriere sie in meinen Kreationen und baue eine Handlung nach meinen Vorstellungen auf. Mein Stil zeichnet sich durch grobe Zeichnungen aus, die eine abwechselnde Transition zu detaillierten Zeichnungen haben, um einen Polar-Effekt auszulösen. Die Detailgenauigkeit rücken bestimmte Szenen oder Aspekte näher ins Licht und helfen den Zuschauer/innen einerseits die Wichtigkeit zu erkennen und andererseits die Spannung beizubehalten.</p>
-      <h2 class="motivation-sub-title">Zeichnungen</h2>
-      <div class="motivation-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
+      <h2 class="section_sub_title">Zeichnungen</h2>
+      <div class="projects-drawings-container">
+        <div class="projects-containers">
+          <div class="projects-drawing-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
+                src="./assets/drawings/Skizzen_1.png"
+                alt="Skizze 1"
+                class="projects-img"
               />
             </div>
-            <h2 class="motivation-sub-title project-title">Project One</h2>
+            <h2 class="section_sub_title project-title">Schule</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('./assets/drawings/Skizzen_1.pdf')"
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
+              Herunterladen
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="projects-drawing-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
+                src="./assets/drawings/Skizzen_2.png"
+                alt="Skizze 2"
+                class="projects-img"
               />
             </div>
-            <h2 class="motivation-sub-title project-title">Project Two</h2>
+            <h2 class="section_sub_title project-title">Charaktere</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('./assets/drawings/Skizzen_2.pdf')"
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
+              Herunterladen
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="projects-drawing-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
+                src="./assets/drawings/Skizzen_3.png"
+                alt="Skizze 3"
+                class="projects-img"
               />
             </div>
-            <h2 class="motivation-sub-title project-title">Project Three</h2>
+            <h2 class="section_sub_title project-title">Rita</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('./assets/drawings/Skizzen_3.pdf')"
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
+              Herunterladen
               </button>
             </div>
           </div>
         </div>
       </div>
 
+      <h2 class="section_sub_title">Comics</h2>
 
-
-      <h2 class="motivation-sub-title">Comics</h2>
-      <div class="motivation-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="motivation-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="motivation-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="motivation-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+      <h2 class="section_sub_title">Animationen</h2>
+      <div class="projects-animations-container">
+        <div class="projects-containers">
+          <div class="projects-video-container color-container">
+            <video class="projects-video" muted loop autoplay>
+              <source src="assets/animations/Das (gefährliche) Spukhaus.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <h2 class="section_sub_title project-title">Das (gefährliche) Spukhaus</h2>
+            <p class="section__text__p1">lajdflknasd lasdfj lkask adslfksd vkadhb kadvk dlad vadfb k dabkjadlf bnadk bkadb</p>
           </div>
         </div>
       </div>
 
-
-
-      <h2 class="motivation-sub-title">Animationen</h2>
-      <div class="motivation-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="motivation-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+      <div class="projects-animations-container">
+        <div class="projects-containers">
+          <div class="projects-video-container color-container">
+            <video class="projects-video" muted loop autoplay>
+              <source src="assets/animations/It's a TRAP!.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <h2 class="section_sub_title project-title">It's a TRAP!</h2>
+            <p class="section__text__p1">lajdflknasd lasdfj lkask adslfksd vkadhb kadvk dlad vadfb k dabkjadlf bnadk bkadb</p>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="motivation-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+          <div class="projects-video-container color-container">
+            <video class="projects-video" muted loop autoplay>
+              <source src="assets/animations/It's a TRAP!.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <h2 class="section_sub_title project-title">It's a TRAP!</h2>
+            <p class="section__text__p1">lajdflknasd lasdfj lkask adslfksd vkadhb kadvk dlad vadfb k dabkjadlf bnadk bkadb</p>
           </div>
         </div>
       </div>
-
+      
+      <div class="projects-animations-container">
+        <div class="projects-content-containers">
+          <div class="projects-video-container color-container">
+            <video class="projects-video" muted loop autoplay>
+              <source src="assets/animations/Lookin' good Imposter.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <h2 class="section_sub_title project-title">Lookin' good Imposter</h2>
+            <p class="section__text__p1">lajdflknasd lasdfj lkask adslfksd vkadhb kadvk dlad vadfb k dabkjadlf bnadk bkadb</p>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- END - SECTION --- PROJECTS --- SECTION - END -->
 
 
-
-
+    <!-- START - SECTION --- CONTACT --- SECTION - START -->
     <section id="contact">
       <p class="section__text__p1">Intressiert?</p>
       <h1 class="title">Kontakt aufnehmen</h1>
@@ -477,11 +356,19 @@
         </div>
       </div>
     </section>
-    
+    <!-- END - SECTION --- CONTACT --- SECTION - END -->
+
+
+    <!-- START - FOOTER - START -->
     <footer>
       <p>Copyright &#169; 2023 Cédric Wermeille. All Rights Reserved.</p>
       <p><a href="./sites/impressum.html">Impressum</a></p>
     </footer>
+    <!-- END - FOOTER - END -->
+
+
+    <!-- START - SCRIPTS - START -->
     <script src="script.js"></script>
+    <!-- END - SCRIPTS - END -->
   </body>
 </html>
