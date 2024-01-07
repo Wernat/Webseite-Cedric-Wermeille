@@ -1,4 +1,6 @@
-/* GENERAL */
+/* --------------- */
+/* --- GENERAL --- */
+/* --------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -22,14 +24,29 @@ p {
   color: antiquewhite;
 }
 
-/* TRANSITION */
+.title {
+  font-size: 3rem;
+  color: antiquewhite;
+  text-align: center;
+}
+
+/* ------------------ */
+/* --- TRANSITION --- */
+/* ------------------ */
 
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* DESKTOP NAV */
+h3 {
+  color: antiquewhite;
+
+}
+
+/* --------------------------- */
+/*  --- NAVIGATION DESKTOP --- */
+/* --------------------------- */
 
 nav,
 .nav-links {
@@ -92,8 +109,9 @@ a:hover {
   text-decoration-thickness: 4px;
 }
 
-
-/* HAMBURGER MENU */
+/* ------------------------------------------ */
+/* --- MOBILE NAVIGATION (HAMBURGER MENU) --- */
+/* ------------------------------------------ */
 
 #hamburger-nav {
   display: none;
@@ -163,21 +181,16 @@ a:hover {
 
 .hamburger-icon span:first-child {
   transform: none;
-}
-
-.hamburger-icon span:first-child {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-/* SECTIONS */
+/* ------------------------ */
+/* --- SECTIONS GENERAL --- */
+/* ------------------------ */
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 120vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -222,13 +235,17 @@ section {
   text-align: center;
 }
 
-.title {
+.section__title {
   font-size: 3rem;
   color: antiquewhite;
   text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-/* HOME SECTION */
+/* -------------------- */
+/* --- HOME SECTION --- */
+/* -------------------- */
 
 #home {
   display: flex;
@@ -256,14 +273,18 @@ section {
   gap: 1rem;
 }
 
-/* ICONS */
+/* ------------- */
+/* --- ICONS --- */
+/* ------------- */
 
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
-/* BUTTONS */
+/* --------------- */
+/* --- BUTTONS --- */
+/* --------------- */
 
 .btn-container {
   display: flex;
@@ -277,42 +298,25 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  background: rgb(0, 0, 0);
+  border: rgb(0, 0, 0) 0.1rem solid;
   color: antiquewhite;
 }
 
-.btn-color-1:hover,
-.btn-color-2:hover {
+.btn:hover {
   cursor: pointer;
-}
-
-.btn-color-1 {
-  background: rgb(0, 0, 0);
-  color: antiquewhite;
-  border: rgb(0, 0, 0) 0.1rem solid;
-}
-
-.btn-color-1:hover {
   background: none;
   color: white;
   border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-color-2 {
-  background: none;
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-color-2:hover {
-  border: rgb(0, 0, 0) 0.1rem solid;
-  color: white;
-  background: rgb(0, 0, 0);
 }
 
 .btn-container {
-  gap: 1rem;
+  gap: 2rem;
 }
 
-/* ABOUT SECTION */
+/* --------------------- */
+/* --- ABOUT SECTION --- */
+/* --------------------- */
 
 #about {
   position: relative;
@@ -354,7 +358,9 @@ section {
   height: 80%;
 }
 
-/* MOTIVATION SECTION */
+/* ---------------------------- */
+/* ---  MOTIVATION SECTIONS --- */
+/* ---------------------------- */
 
 #motivation {
   position: relative;
@@ -380,9 +386,10 @@ section {
   justify-content: space-around;
 }
 
+/* ------------------------ */
+/* --- PROJECTS SECTION --- */
+/* ------------------------ */
 
-
-/* PROJECTS SECTION */
 #projects {
   position: relative;
   height: auto;
@@ -407,8 +414,6 @@ section {
   display: flex;
 }
 
-
-
 .projects-drawing-container {
   flex: 1;
   background: black;
@@ -431,7 +436,7 @@ section {
 
 .projects-img {
   width: 100%;
-  height: auto; /* Adjust the height automatically */
+  height: auto;
   position: relative;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -441,8 +446,8 @@ section {
 
 
 .projects-video {
-  width: 100%;  /* Stretch the video to cover the entire width of the container */
-  height: auto; /* Adjust the height automatically */
+  width: 100%;
+  height: auto;
   position: relative;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -466,7 +471,9 @@ section {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
+/* ----------------------- */
+/* --- CONTACT SECTION --- */
+/* ----------------------- */
 
 #contact {
   display: flex;
@@ -505,7 +512,10 @@ section {
   height: 2.5rem;
 }
 
-/* IMPRESSUM SECTION */
+/* -------------------------- */
+/* ---- IMPRESSUM SECTION --- */
+/* -------------------------- */
+
 #impressum {
   display: flex;
   justify-content: center;
@@ -518,25 +528,26 @@ section {
   
 }
 
-/* FOOTER SECTION */
+/* ---------------------- */
+/* --- FOOTER SECTION --- */
+/* ---------------------- */
 
 footer {
   display: block;
-  height: 14vh; /* Adjust height as needed */
+  height: 14vh;
   padding-top: 6vh;
-  text-align: center; /* Center text horizontally if flex doesn't cover it */
+  text-align: center;
   background-color: black;
 }
-
-
 
 footer p {
   text-align: center;
   color: white;
 }
 
-
-/* TIMELINE SHIIT STUFF */
+/* -------------------------- */
+/* --- EXPERIENCE SECTION --- */
+/* -------------------------- */
 
 #experience {
   height: auto;
@@ -544,8 +555,21 @@ footer p {
 
 .timeline {
   position: relative;
-  max-width: 1200px;
   margin: 0 auto;
+}
+
+.experience-timeline-container {
+  position: relative;
+    padding: 2em 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.experience-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
 }
 
 .timeline::after {
@@ -560,27 +584,25 @@ footer p {
 }
  
 /* Container around content */
-.container {
+.timeline-container {
   position: relative;
-  background-color: inherit;
-  width: 50%;
+  width: 45%;
   padding: 1.5rem;
-  flex: 1;
   background: black;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-color: antiquewhite;
   text-align: center;
 }
 
 /* The circles on the timeline */
-.container::after {
+.timeline-container::after {
   content: '';
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
-  background-color: white;
+  right: -40px;
+  background-color: antiquewhite;
   border: 4px solid black;
   top: 15px;
   border-radius: 50%;
@@ -589,12 +611,14 @@ footer p {
 
 /* Place the container to the left */
 .left {
-  left: -6.7%;
+  float: left;
+  clear: both;
 }
 
 /* Place the container to the right */
 .right {
-  left: 50%;
+  float: right;
+  clear: both;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -627,17 +651,22 @@ footer p {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -16px;
+  left: -40px;
 }
 
 /* The actual content */
-.content {
+.timeline-content {
   padding: 20px 30px;
   background-color: black;
   position: relative;
   border-radius: 6px;
 }
 
-.content p {
+.timeline_sub_title {
   color: antiquewhite;
+  font-weight: 600;
+  font-size: 1.75rem;
+  text-align: center;
+  padding-bottom: 3vh;
 }
+
