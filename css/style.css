@@ -344,7 +344,7 @@ section {
 }
 
 .details-container {
-  padding: 1rem;
+  padding: 2rem 5rem;
   flex: 1;
   background: black;
   border-radius: 2rem;
